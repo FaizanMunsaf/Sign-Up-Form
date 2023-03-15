@@ -1,0 +1,408 @@
+
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: -webkit-calc((100% - 60px) / 2);
+  width: -moz-calc((100% - 60px) / 2);
+  width: calc((100% - 60px) / 2);
+}
+
+@media (max-width: 767px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove default table spacing.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+ *    on fieldsets.
+ */
+fieldset {
+  min-width: 0;
+  /* [1] */
+  border: 0;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+/* ==========================================================================
+   #PAGE WRAPPER
+   ========================================================================== */
+.page-wrapper {
+  min-height: 100vh;
+  
+}
+
+body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 33px;
+  font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--pill {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.btn--green {
+  background: #e98b91;
+}
+
+.btn--green:hover {
+  background: #4dae3c;
+}
+
+/* ==========================================================================
+   #box
+   ========================================================================== */
+.login-box{
+	max-width: 700px;
+	float:none;
+	margin:150px auto;
+}
+.login-left{
+	background: rgba(0,0,0,0.7);
+
+	padding:30px;
+}
+.login-right{
+	background:#fff;
+	padding:30px;
+}
+.form-control{
+	background-color:transparent !important;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style:groove;
+  outline: none;
+}
+.leftside{
+    float:left-side;
+	width: 100%;
+}
+.rightside{
+    float:right-side;
+	width: 100%;
+}
+#cornercurves {
+    border-top-left-radius: 25px;
+	  border-bottom-left-radius: 25px;
+	color: #fff;
+}
+#cornercurves_r {
+    border-top-right-radius: 25px;
+	  border-bottom-right-radius: 25px;
+}
+#borderset{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:left;
+	margin-left:40px;
+	margin-top:10px;
+}
+#bordersetr{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:right;
+	margin-right:40px;
+    margin-top:10px;
+}
+#asterik{
+	font-size:20px;
+    color:#fe0000;
+	width:2%;
+	float:left;
+	margin-left:8px;
+}
+@media screen and (max-width: 767px) and (min-width: 600px){
+#cornercurves
+{	
+    border-radius: 25px;
+	color: #fff;
+}
+#cornercurves_r {
+     border-radius: 25px;
+}
+#borderset{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:left;
+	margin-left:40px;
+	margin-top:10px;
+}
+#bordersetr{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:right;
+	margin-right:108px;
+    margin-top:10px;
+}	
+}
+@media screen and (max-width: 599px) and (min-width: 540px){
+#cornercurves
+{	
+    border-radius: 25px;
+	color: #fff;
+}
+#cornercurves_r {
+     border-radius: 25px;
+}
+#borderset{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:left;
+	margin-left:40px;
+	margin-top:10px;
+}
+#bordersetr{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:right;
+	margin-right:108px;
+    margin-top:10px;
+}	
+}
+@media screen and (max-width: 539px) and (min-width: 500px){
+#cornercurves
+{	
+    border-radius: 25px;
+	color: #fff;
+}
+#cornercurves_r {
+     border-radius: 25px;
+}
+#borderset{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:left;
+	margin-left:40px;
+	margin-top:10px;
+}
+#bordersetr{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:right;
+	margin-right:90px;
+  margin-top:10px;
+}	
+}
+@media screen and (max-width: 499px) and (min-width: 450px){
+#cornercurves
+{	
+    border-radius: 25px;
+	color: #fff;
+}
+#cornercurves_r {
+     border-radius: 25px;
+}
+#borderset{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:left;
+	margin-left:40px;
+	margin-top:10px;
+}
+#bordersetr{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:right;
+	margin-right:80px;
+    margin-top:10px;
+}	
+}
+@media screen and (max-width: 449px) and (min-width: 390px){
+#cornercurves
+{	
+    border-radius: 25px;
+	color: #fff;
+}
+#cornercurves_r {
+     border-radius: 25px;
+}
+#borderset{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:left;
+	margin-left:40px;
+	margin-top:10px;
+}
+#bordersetr{
+	border-bottom:1px solid;
+	border-color:#fe0000;
+	width:30%;
+	float:right;
+	margin-right:40px;
+  margin-top:10px;
+}	
+}
+#fname_error,#lname_error,#phone_error,
+#email_error,#company_error,#employee_error{
+font-size: 13px;
+color: red;
+margin: 0px;
+text-align: center;
+display: none;
+}
+#fname,#lname,#phone,#email,#company,
+#employee{
+  margin-bottom:20px ;
+}
+img{
+  margin-bottom: 30px;
+}
